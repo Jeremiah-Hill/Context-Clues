@@ -20,7 +20,7 @@ console.log("Loading..");
         var weapons = ['Beam Sword', 'Home-Run Bat', 'Hammer', 'Motion-Sensor Bomb', 'Bob-omb', 'Bumper', 'Green Shell', 'Red Shell', 'Poke Ball', 'Ray Gun', 'Fire Flower', 'Star Rod', 'Fan', 'Star', 'Mr. Saturn', 'Super Scope', 'Freezie', 'Super Hammer', 'Smart Bomb', 'Blue Shell'];
         $('#container').prepend(`<h3 id="${index}">Accusation ${index}</h3>`);
         $(`#${index}`).click(function () {
-            alert("I accuse: " + friends[index % friends.length] + " on " + locations[index % locations.length] + " using the " + weapons[index % weapons.length] + ", taking their opponent's stock! ");
+            alert("I accuse: " + friends[index % friends.length] + " using the " + weapons[index % weapons.length] + " on " + locations[index % locations.length] + ", taking their opponent's stock! ");
         });
     }
 
